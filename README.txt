@@ -12,7 +12,7 @@ Program gets a maze described under input/maze.txt, and finds the goal node star
 The order of node expansion is East, South, West and North. 
 
 An example maze is as follows:
-<img src="http://trandroid.com/logo.png" width="100%"/>
+http://trandroid.com/logo.png
 
 For the above maze and for each search method, program displays on output/.*.txt
 i. The cost of the solution found.
