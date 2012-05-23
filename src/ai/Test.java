@@ -3,18 +3,26 @@ package ai;
 public class Test {
 
 	public static void main(String[] args) {
-		Home home = new Home();
-		Room r = home.dfs(2, 1);
-		home.createRooms();
-		r = home.bfs(2, 1);
-		home.createRooms();
-		r = home.ids(2, 1);
-		home.createRooms();
-		r = home.uniform(2, 1);
-		home.createRooms();
-		r = home.greedy(2, 1);
-		home.createRooms();
-		r = home.astar(2, 1);
+		
+		Pair startNode = new Pair(2, 1);
+		
+		DepthFirstSearch dfs = new DepthFirstSearch(startNode);
+		dfs.dfs();
+		
+		BreadthFirstSearch bfs = new BreadthFirstSearch(startNode);
+		bfs.bfs();
+		
+		IterativeDeepeningSearch ids = new IterativeDeepeningSearch(startNode);
+		ids.ids();
+		
+		UniformCostSearch uniform = new UniformCostSearch(startNode);
+		uniform.uniform();
+		
+		GreedyBestFirstSearch greedy = new GreedyBestFirstSearch(startNode);
+		greedy.greedy();
+		
+		AStarSearch aStar = new AStarSearch(startNode);
+		aStar.astar();
 		
 	}
 	
