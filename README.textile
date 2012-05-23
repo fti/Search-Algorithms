@@ -1,0 +1,21 @@
+h2. Java implementation for solving 2D mazes
+
+#Depth First Search
+#Breadth First Search
+#Iterative Deepening
+#Uniform Cost Search
+#Greedy Best First Search
+#A* Heuristic Search
+
+
+Program gets a maze described under input/maze.txt, and finds the goal node starting from the start node.
+
+The order of node expansion is East, South, West and North. 
+
+An example maze is as follows:
+!http://trandroid.com/github/maze.png(Textist)!
+
+For the above maze, finds and writes below issues on output/.*.txt
+i. The cost of the solution found.
+ii. The solution path itself.
+iii. The list of expanded nodes.
